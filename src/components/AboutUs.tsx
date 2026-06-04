@@ -47,8 +47,8 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <div id="about" className=" min-h-screen w-screen flex flex-col  overflow-hidden bg-blue-50">
-      <div className="flex relative mb-8 mt-36 flex-col items-center gap-5">
+    <div id="about" className="flex flex-col w-screen min-h-screen overflow-hidden  bg-blue-50">
+      <div className="relative flex flex-col items-center gap-5 mb-8 mt-36">
         {" "}
         <p className="font-general  text-sm uppercase md:text-[10px]">WELCOME TO ZENTRY</p>
         <AnimatedTitle
@@ -59,18 +59,18 @@ const AboutUs = () => {
 
       <MouseParallaxContainer globalFactorX={0.1} globalFactorY={0.1}>
         <MouseParallaxChild factorX={0.3} factorY={0.5}>
-          <div id="clip" className=" relative h-dvh ">
+          <div id="clip" className="relative  h-dvh">
             <div
               className=" absolute rounded-3xl overflow-hidden left-1/2 top-0 z-20 border border-black mask-clip-path2 origin-center
          -translate-x-1/2  w-[30vw] h-96"
             >
-              <img src="/img/about.webp" className=" absolute inset-0 size-full object-cover" alt="" />
+              <img src="/img/about.webp" className="absolute inset-0 object-cover  size-full" alt="" />
             </div>{" "}
             <div className=" about-subtext">
-              <p className=" capitalize">The Game of Games begins—your life, now an epic MMORPG</p>
-              <p className=" text-gray-500">
+              <p className="capitalize ">The Game of Games begins—your life, now an epic MMORPG</p>
+              <p className="text-gray-500 ">
                 Zentry unites the every players from countless games and platforms, both digital and physical, into a
-                unified Play Economy
+                unified Play Economy.
               </p>
             </div>
           </div>
